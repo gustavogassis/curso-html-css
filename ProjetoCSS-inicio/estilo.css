@@ -1,0 +1,100 @@
+body{
+    font-family: Arial, sans-serif;
+    background: rgb(189, 185, 185);
+    margin: 0;
+}
+.banner{
+    background-image: url(imagens/bg-3.jpg);
+    height: 500px;
+    background-position: right center;
+    background-size: cover;
+    border-top: 1px solid transparent;
+}
+.banner-content{
+    margin-top: 150px;  
+    text-align: center;
+    color: white;
+}
+.banner-content h1{
+    text-transform: uppercase;
+    font-size: 46px;
+    text-shadow: 3px 3px 2px #333;
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+.section-content{
+    background-color: white;
+    padding: 10px;
+    margin-top: 15px;
+    overflow: auto;
+}
+.section-content h2{
+    width: 100%;
+}
+.banner nav ul{
+    text-align: right;
+    margin: 15px 25px 0 0;
+}
+.banner nav li{
+    display: inline-block;
+    list-style: none;
+    border:solid 2px #ccc;
+    margin-left: 8px;
+    font-size: 14px;
+}
+.banner nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    text-transform: uppercase;
+}
+.banner nav a:hover{
+    background-color: rgba(87, 85, 85, 0.3);
+}
+.phead{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 13px;
+    border-bottom: solid 3px white;
+    display: inline-block;
+}
+h2{
+    background-color: #ccc;
+    width: 200px;
+    padding: 8px;
+    border-bottom: solid 3px black;
+}
+footer{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    text-shadow: 2px 2px 2px black;
+    background-color: #6b6c68;
+    line-height: 80px;
+    height: 80px;
+}
+
+
+
+
+.card{
+    float: left;
+    box-sizing: border-box;
+    width: 32%;
+}
+.card-1, .card-2{
+    margin-right: 2%;
+}
+.card p{
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 12.5px;
+    text-transform: uppercase;
+}
+.card img{
+    width: 100%;
+    display: block;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+
+        <style>
+            
+            body{
+                position: relative;
+            }
+            .card{
+                width: 300px;
+                height: 600px;
+                position: absolute;
+                left: 150px;
+            }
+            img{
+                width: 300px;
+                height: 300px;
+            }
+            p{
+                text-align: center;
+            }
+            .card:hover::after{
+                content: 'Adicionar ao Carrinho';
+                color: white;
+                text-align: center;
+                font-family: sans-serif;
+                border: solid 3px #2d1752;
+                background-color: #2d1752;
+                width: 300px;
+                height: 35px;
+                position: absolute;
+                top: 150px; 
+                border-radius: 50px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <div class="card">
+            <img src="imagens/modelo1.jpg">
+            <p>lorem ipsum dolor</p>
+            <p>$350,00</p>
+            <p>Buy</p>
+        </div>
+
+        <script>
+            (function (){
+
+                $div = document.querySelector('div')
+                $img= document.querySelector('img');
+
+                $div.addEventListener('mouseover', function(){
+                    $img.src = "imagens/modelo2.jpg";
+                }, false)
+
+                $div.addEventListener('mouseout', function(){
+                    $img.src = "imagens/modelo1.jpg";
+                }, false)
+
+            })()
+        </script>
+    </body>
+
+</html>

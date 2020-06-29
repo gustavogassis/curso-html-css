@@ -1,0 +1,72 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+            input[type="checkbox"]{
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+                opacity: 0;
+                margin: 0;
+                /*Deste modo está acessível para a navegação via teclado*/
+            }
+            span{
+                display: inline-block;
+                width: 65px;
+                height: 36px;
+                background: #ccc;
+                border-radius: 50px;
+            }
+            span:before{
+                content: '';
+                border-radius: 100%;
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: #eee;
+                margin: 8px;
+                transition:all .2s ease-in-out;
+            }
+            input[type="checkbox"]:checked + span:before{
+                transform: translateX(25px);
+                background: red;
+            }
+            input:focus + span{
+                box-shadow: 0 0 0 1px red;
+            }
+            
+
+        </style>
+
+    </head>
+    <body>
+        
+        <h1>Estrutura Básica</h1>
+
+        <label>
+            <input type="checkbox">
+            <span></span>
+            Esporte
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <span></span>
+            Política
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <span></span>
+            Educação
+        </label>
+
+    </body>
+</html>
